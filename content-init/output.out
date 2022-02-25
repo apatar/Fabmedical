@@ -201,3 +201,46 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
 2021-11-18 10:07:11.151  INFO 4548 --- [nio-3002-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-11-18 10:07:11.151  INFO 4548 --- [nio-3002-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-11-18 10:07:11.161  INFO 4548 --- [nio-3002-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2022-02-24 08:16:45.225  INFO 29448 --- [           main] c.c.training.TraningApplication          : Starting TraningApplication v1.0-SNAPSHOT on fabmedical-hzh with PID 29448 (/home/adminfabmedical/MCW-Cloud-native-applications-pim/Fabmedical/content-init/target/training-init-1.0-SNAPSHOT.jar started by adminfabmedical in /home/adminfabmedical/MCW-Cloud-native-applications-pim/Fabmedical/content-init)
+2022-02-24 08:16:45.228  INFO 29448 --- [           main] c.c.training.TraningApplication          : No active profile set, falling back to default profiles: default
+2022-02-24 08:16:46.414  INFO 29448 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3002 (http)
+2022-02-24 08:16:46.427  INFO 29448 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-24 08:16:46.428  INFO 29448 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-02-24 08:16:46.491  INFO 29448 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-24 08:16:46.492  INFO 29448 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1208 ms
+2022-02-24 08:16:46.676  INFO 29448 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-24 08:16:46.825  INFO 29448 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.3.1 
+2022-02-24 08:16:47.601  INFO 29448 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-24 08:16:47.822  INFO 29448 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3002 (http) with context path ''
+2022-02-24 08:16:47.825  INFO 29448 --- [           main] c.c.training.TraningApplication          : Started TraningApplication in 3.154 seconds (JVM running for 3.538)
+2022-02-24 08:27:12.154  INFO 29448 --- [nio-3002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-24 08:27:12.154  INFO 29448 --- [nio-3002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-24 08:27:12.161  INFO 29448 --- [nio-3002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-02-24 08:36:16.364  INFO 29448 --- [nio-3002-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:416) ~[tomcat-embed-core-9.0.31.jar!/:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260) ~[tomcat-embed-core-9.0.31.jar!/:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar!/:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar!/:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar!/:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar!/:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar!/:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
