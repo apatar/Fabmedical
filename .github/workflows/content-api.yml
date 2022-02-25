@@ -20,7 +20,7 @@ on:
 # resourceGroupName，containerRegistryName，containerRegistry替换为自己的
 env:
  imageRepository: 'content-api'
- resourceGroupName: 'fabmedicalhzh'
+ resourceGroupName: 'huzh5'
  containerRegistryName: 'fabmedicalhzh'
  containerRegistry: 'fabmedicalhzh.azurecr.cn'
  dockerfilePath: './content-api'
